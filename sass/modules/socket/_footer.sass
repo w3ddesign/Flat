@@ -1,0 +1,38 @@
+footer
+  background-color: $blue
+.footer-wrapper
+  margin: 0 auto
+  padding: 2em 0
+  display: flex
+  max-width: $guide
+  justify-content: center
+  align-items: center
+
+  @media (max-width: 615px)
+    flex-direction: column
+  p
+    text-align: center
+    color: white
+    max-width: $guide
+    margin: 0 2em
+
+    @media (max-width: 800px)
+      margin: 0 1em
+
+    @media (max-width: 700px)
+      font-size: 1.2em
+
+  span
+    color: white
+    font-size: 50px
+    position: relative
+    top: -5px
+
+  strong
+    font-weight: bold
+    cursor: pointer
+    transition: all 0.35s ease-in-out
+    color: white
+
+    &:hover
+      color: $green

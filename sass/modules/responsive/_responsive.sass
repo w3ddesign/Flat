@@ -1,0 +1,71 @@
+.responsive-wrapper
+  background-color: #456087
+  height: 600px
+  display: flex
+  justify-content: center
+  flex-wrap: wrap
+  align-content: center
+  margin: 0 auto
+
+  @media (max-width: 960px)
+    padding: 4em 0
+
+  @media (max-width: 675px)
+    padding: 2em 0
+
+  .article-wrapper
+    display: flex
+    max-width: $guide
+    justify-content: space-between
+    align-items: center
+    color: white
+
+    @media (max-width: 960px)
+      flex-direction: column
+      padding: 2em 0
+
+    article
+      max-width: 400px
+      padding-right: 2em
+      padding-left: 2em
+
+      @media (max-width: 960px)
+        text-align: center
+
+      h2
+        font-size: 2em
+        text-align: left
+        padding-top: 0
+        margin-top: 0
+
+        @media (max-width: 960px)
+          text-align: center
+
+
+      span
+        color: $green
+        font-weight: bold
+
+
+      .button
+        width: 120px
+        border: 1px solid white
+        color: white
+        padding: 15px 20px
+        text-align: center
+        font-weight: bold
+        background: $green
+        transition: all 0.35s ease-in-out
+
+        &:hover
+          color: white
+          background: $blue
+
+    figure
+      padding-top: 4em
+      img
+        width: 100%
+        background-image: url(../images/responsive/responsiveback.png)
+        background-repeat: no-repeat
+        background-position: center center
+        background-size: cover

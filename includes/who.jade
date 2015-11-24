@@ -1,0 +1,20 @@
+div.client-wrapper
+  img(src="images/who/logoontime.svg")
+  img(src="images/who/logopersovuses.svg")
+  img(src="images/who/logooctogon.svg")
+  
+div.who-wrapper
+  article
+    h2 Diseño Web & <span>Social Media</span>
+  
+  mixin who(img, title, description)
+    figure
+      img(src="#{img}")
+      figcaption
+        h3 #{title}
+        p #{description}
+        
+  div.who-points
+    +who("images/who/folder.svg", "Código Limpio", "Nuestras páginas web están programadas sólamente con lo necesario, funcionales y optimizadas.")
+    +who("images/who/brush.svg", "Diseño Cuidado", "Nuestras páginas web están programadas sólamente con lo necesario, funcionales y optimizadas.")
+    +who("images/who/rocket.svg", "Rápido y Fiable", "Nuestras páginas web están programadas sólamente con lo necesario, funcionales y optimizadas.")

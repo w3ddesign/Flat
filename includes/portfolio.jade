@@ -1,0 +1,22 @@
+mixin portfolio(filter, img, alt, a, title, description)
+  li.portfolio-wrap(class="#{filter}")
+    a(href="#{a}", class="link")
+      img.portfolio-thumbnail(src="#{img}", alt="#{alt}")
+      .label
+        p.title #{title}
+        p.description #{description}
+        
+div.portfolio-wrapper
+  ul.portfolio-nav
+    li: a(href="#", data-rel="all", class="filter filtered") TODO
+    li: a(href="#", data-rel="clients", class="filter") CLIENTES
+    li: a(href="#", data-rel="templates", class="filter") TEMPLATES
+    
+  div.laptop-wrapper
+    ul#portfolio-gallery
+      +portfolio("clients all", "images/portfolio/octogon.jpg", "Octogon Sports Center", "http://www.octogonsportcenter.com", "Octogon Sports Center", "Gimnasio")
+      +portfolio("clients all", "images/portfolio/persovuses.jpg", "Persovuses", "http://persovuses.org", "Persovuses", "ONG")
+      +portfolio("clients all", "images/portfolio/ontime.jpg", "OnTimeService", "http://ontimeservice24h.com", "On Time Service 24h", "Transporte Mercancías")
+      +portfolio("templates all", "images/portfolio/blue.jpg", "Blue", "http://behance.net/w3ddesign", "Blue", "Template")
+      +portfolio("templates all", "images/portfolio/yellow.jpg", "Yellow", "http://behance.net/w3ddesign", "Yellow", "Template")
+      +portfolio("templates all", "images/portfolio/ddi.jpg", "DDI", "http://behance.net/w3ddesign", "DDI", "Template")

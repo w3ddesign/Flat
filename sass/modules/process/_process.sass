@@ -1,0 +1,41 @@
+.process-wrapper
+  padding: 2em 0
+  background-color: $red
+  display: flex
+  flex-direction: column
+  h2
+    padding-top: 2em
+    color: white
+  ul
+    display: flex
+    padding: 1em 0
+    margin: 0 auto
+    max-width: $guide
+    justify-content: center
+
+    li
+      padding: 0 2em
+      font-family: $header-font
+      font-size: 2em
+      color: white
+
+      @media (max-width: 850px)
+        font-size: 1.5em
+
+      @media (max-width: 500px)
+        font-size: 1.2em
+        padding: 0 0.5em
+
+
+    .color1
+      color: $green
+    .color2
+      color: $blue
+
+  img
+    background-image: url(../images/process/servicesback.png)
+    background-repeat: no-repeat
+    background-position: center center
+    background-size: cover
+    margin: 0 auto
+    margin-top: 4em

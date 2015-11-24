@@ -1,0 +1,31 @@
+doctype html
+html(lang="es")
+  head
+    meta(charset="UTF-8")
+    title W3D Flat Template
+    meta(name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0")
+    link(rel="stylesheet" href="css/main.css")
+    link(href='https://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css')
+      
+    //if IE
+      script(src="//html5shim.googlecode.com/svn/trunk/html5.js")
+      
+  body
+    include includes/navbar.jade
+    include includes/header.jade
+    section#who
+      include includes/who.jade
+    section#responsive
+      include includes/responsive.jade
+    section#portfolio
+      include includes/portfolio.jade
+    section#process
+      include includes/process.jade
+    section#contact
+      include includes/socket.jade
+      include includes/footer.jade
+
+
+    script(src="js/jquery-2.1.1.min.js")
+    script(src="js/respond.min.js")
+    script(src="js/functions.js")

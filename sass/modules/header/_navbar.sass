@@ -1,0 +1,64 @@
+.nav-wrapper
+  background: white
+  width: 100%
+  border-bottom: 1px solid $light-grey
+  height: 70px
+  position: absolute
+  top: 0
+  left: 0
+
+  @media (max-width: 750px)
+    height: 60px
+
+
+  @media (max-width: 550px)
+    height: auto
+
+  .container-nav
+    display: flex
+    max-width: $guide
+    padding: 1em 0
+    margin: 0 auto
+    justify-content: space-between
+    align-items: center
+
+    @media (max-width: 550px)
+      flex-direction: column
+
+    ul
+      display: flex
+      justify-content: flex-end
+      align-items: flex-end
+      font-size: 1em
+
+      @media (max-width: 550px)
+        justify-content: center
+        align-items: center
+
+      li
+        margin: 0 15px
+
+        @media (max-width: 400px)
+          margin: 0 12px
+
+        a
+          color: $dark-grey
+          transition: all 0.35s ease-in-out
+          font-size: 24px
+          @media (max-width: 500px)
+            font-size: 18px
+
+          @media (max-width: 400px)
+            font-size: 15px
+
+          &:hover
+            color: $green
+
+@media (max-width: 1250px)
+  .container-nav figure
+    margin-left: 20px
+
+@media (max-width: 550px)
+  .container-nav figure
+    margin-left: 20px
+    margin-bottom: 20px
